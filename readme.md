@@ -96,9 +96,7 @@ docker run -it --rm \
 
 2. Create a bucket named uploads (or let the app auto-create it).
 
-3. Configure a MinIO event notification (webhook) pointing to:
-
-http://<app-host>:8080/obs-event
+3. Configure a MinIO event notification (webhook) pointing http://<app-host>:8080/obs-event
 ### Example Workflow
 
 1. Upload sample_customers.csv from the UI.
@@ -108,4 +106,5 @@ http://<app-host>:8080/obs-event
 3. File is uploaded to MinIO bucket uploads.
 
 4. If MinIO is configured with webhook → app auto-imports future .csv files uploaded directly to MinIO.
+
 
